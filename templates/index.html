@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>David Harket</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+        <style>
+        @import url('https://fonts.cdnfonts.com/css/gotham');
+        </style>
+        {% import "bootstrap/wtf.html" as wtf %}
+    </head>
+
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container" style="margin:0 0 0 10%;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#Om">Om Meg</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portefølje">Portefølje</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" style="padding-top: 120px">
+            <div class="container">
+                <div class="masthead-subheading" style="color:#CFB997;margin-right: 680px; padding-bottom: 20px;text-align: left">Hei, mitt navn er</div>
+                <div class="masthead-heading" style="color:#FAD6A5;margin-right: 380px;margin-bottom: 20px;text-align: left">DAVID HARKET.</div>
+                <div class="masthead-heading text-uppercase" style="color:#FAD6A5;text-align: left">JEG BYGGER TING PÅ NETT</div>
+                <div class="masthead-subheading" style="color:#CFB997;margin-right: 210px; padding-bottom: 20px;text-align: left">Full stack utvikling av web applikasoner.</div>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="Om">
+            <div class="container">
+                <div class="text-center" style="height: 500px;">
+                    <h2 class="section-heading text-uppercase" style="text-align: left">Om Meg</h2>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="section-subheading" style="text-align: left">Hei! Jeg er en datautvikler og psykologistudent som liker å lage ting på nett.
+                            Interessen min for programmering og webutvikling startet som en interesse i skytjenester, men utviklet seg fort etter som at jeg begynte å lære mer om alle de forskjellige løsningene som kan lages på nett.</p>
+                            <p class="section-subheading" style="text-align: left">Her er noen av teknologiene jeg har jobbet med nylig:</p>
+                            <div class="row" style="font-size:80%">
+                                <div class="col-md-4">
+                                    <ul style="text-align: left;padding-left:15px; color:#CFB997">
+                                        <li><p>Python</p></li>
+                                        <li><p>HTML</p></li>
+                                        <li><p>CSS</p></li>
+                                        <li><p>Python Flask</p></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul style="text-align:left;padding-left:18px; color:#CFB997">
+                                        <li><p>Sqlalchemy</p></li>
+                                        <li><p>SQLite</p></li>
+                                        <li><p>Python Selenium</p></li>
+                                        <li><p>Bootstrap</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="static/img/Bilde.jpg" style="width: 80%; filter: drop-shadow(60px 60px 60px #567189);">
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PORTEFØLJE-->
+        <section class="page-section" id="portefølje">
+            <div class="container">
+                <h2 class="section-heading text-uppercase" style="margin-bottom: 50px">Noen av tingene jeg har laget</h2>
+                <hr style="color:#FAD6A5">
+                <div class="row" style="margin-bottom: 40px; margin-top: 40px;">
+                    <div class="col-lg-6">
+                        <h2 class="section-subheading" style="color:#FAD6A5">Lei En Boks</h2>
+                        <p>Minimalistisk nettside laget med Python Flask og Bootstrap for høytalerutleie.</p>
+                        <div>
+                            <a href="https://www.leienboks.no/"><img src="static/img/leienboks1.png" class="portfolio-img" style="height:95%; width:95%"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-subheading" style="color:#FAD6A5">Studio Vik</h2>
+                        <p>Dynamisk Porteføljenettside med GUI databasefunksjonalitet og smtp protokoll.</p>
+                        <div>
+                            <a href="https://www.leienboks.no/"><img src="static/img/studiovik1.png" class="portfolio-img" style="height:95%; width:95%"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr style="color:#FAD6A5">
+                <div class="row" style="margin-top: 40px; margin-bottom: 40px;">
+                    <div class="col-lg-6">
+                        <h2 class="section-subheading" style="color:#FAD6A5">SubSearch</h2>
+                        <p>Funksjonell webapplikasjon bygget med Flask og Selenium designet av Bootstrap.</p>
+                        <div>
+                            <a href="https://www.leienboks.no/"><img src="static/img/subsearch1.png" class="portfolio-img" style="height:95%; width:95%"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-subheading" style="color:#FAD6A5">Fly Studioz</h2>
+                        <p>Online klesbutikk butikk med integrert betalingsmetode bygget rundt Flask Stripe.</p>
+                        <div>
+                            <a href="https://www.leienboks.no/"><img src="static/img/subsearch1.png" class="portfolio-img" style="height:95%; width:95%"></a>
+                        </div>
+                    </div>
+                </div>
+                <hr style="color:#FAD6A5">
+            </div>
+            <div class="container" style="padding-left: 250px; padding-right:250px;">
+                <div class="row text-center">
+                    <h2 class="section-subheading" style="color:#FAD6A5">GitHub</h2>
+                    <p>Besøk GitHub siden min for å se andre projekter jeg har jobbet med</p>
+                    <a href="https://www.leienboks.no/"><img src="static/img/code1.png" class="portfolio-img"  style="height:95%; width:95%"></a>
+                </div>
+                <hr style="color:#FAD6A5">
+            </div>
+
+        </section>
+        <section class="page-section" id="kontakt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="section-heading text-uppercase" style="color:#FAD6A5">Ta Kontakt!</h1>
+                        <p class="section-subheading" style="color:#CFB997; margin-top: 50px;">Innboksen min er alltid åpen for forespørseler eller andre koderelaterte henvendelser.</p>
+                            <p>Send meg en e-post gjennom skjemaet ved siden av eller kontakt meg direkte via david@harket.no</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form id="contactForm" action="{{ url_for('home') }}" method="post">
+                            <div class="form-floating">
+                                <input class="form-control" name="email" type="text" placeholder="Enter your name..." style="margin-top:10px; margin-right: 50%;" data-sb-validations="required" required/>
+                                <label for="email" style="font-family: 'Gotham', sans-serif;">E-POSTADRESSE</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">E-post er påkrevd.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">E-posten er ikke gyldig.</div>
+                            </div>
+                            <br>
+                            <div class="form-floating" style="margin-right: 0%;">
+                                <textarea class="form-control" id="message" name="message" placeholder="Legg til en beskjed om det er noe du lurer på..." style="height: 12rem" data-sb-validations="nonrequired"></textarea>
+                                <label for="message" style="font-family: 'Gotham', sans-serif;">LEGG IGJEN EN BESKJED</label>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4" style="background-color:#567189">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start"></div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-social mx-2" href="https://www.linkedin.com/in/david-harket-3976b8193/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="static/js/scripts.js"></script>
+    </body>
+</html>

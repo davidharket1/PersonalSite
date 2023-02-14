@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+                <form id="contactForm" action="{{ url_for('home') }}" method="post">
+                                <h2 class="top" id="bestill"><i>E-POST</i></h2>
+                                <div class="form-floating">
+                                    <input class="form-control" name="email" type="text" placeholder="Enter your name..." style="margin-top:10px; margin-right: 50%;" data-sb-validations="required" required/>
+                                    <label for="email" style="font-family: 'Gotham', sans-serif;">E-POSTADRESSE</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">E-post er påkrevd.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">E-posten er ikke gyldig.</div>
+                                </div>
+                                <h2 class="top" style="font-family: 'Gotham', sans-serif;"><i>DAGER</i></h2>
+                                <div class="form-floating">
+                                    <select  class="form-select" id="days" name="days" aria-label="Default select example" data-sb-validations="required" required>
+                                      <option selected>-</option>
+                                      <option value="1 døgn" style="font-family: 'Gotham', sans-serif;">1 DØGN</option>
+                                      <option value="1 helg" style="font-family: 'Gotham', sans-serif;">1 HELG</option>
+                                      <option value="1 uke" style="font-family: 'Gotham', sans-serif;">1 UKE</option>
+                                      <option value="egendefinert" style="font-family: 'Gotham', sans-serif;">EGENDEFINERT</option>
+                                    </select>
+                                    <label for="days" style="font-family: 'Gotham', sans-serif;">HVOR LENGE VIL DU LEIE?</label>
+                                </div>
+                                <h2 class="top"><i>DATO</i></h2>
+                                <div class="form-floating">
+                                    <input class="form-control" id="date" name="date" type="date" placeholder="28.10.2022" style="margin-top: 10px; font-family: 'Gotham', sans-serif;" data-sb-validations="required" required/>
+                                    <label for="date" style="font-family: 'Gotham', sans-serif;">HVILKEN DATO VIL DU LEIE FRA?</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">Dato er påkrevd.</div>
+                                </div>
+                                <h2 class="top"><i>ADRESSE</i></h2>
+                                <div class="form-floating">
+                                    <input class="form-control" id="address" name="address" type="text" placeholder="Adresse" style="margin-top: 10px;" data-sb-validations="required"/>
+                                    <label for="address" style="font-family: 'Gotham', sans-serif;">HVILKEN ADDRESSE SKAL VI LEVERE TIL?</label>
+                                    <div class="invalid-feedback" data-sb-feedback="address:required">Adresse er påkrevd.</div>
+                                </div>
+                                <h2 class="top"><i>MELDING</i></h2>
+                                <div class="form-floating" style="margin-right: 0%;">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Legg til en beskjed om det er noe du lurer på..." style="height: 12rem" data-sb-validations="nonrequired"></textarea>
+                                    <label for="message" style="font-family: 'Gotham', sans-serif;">LEGG IGJEN EN BESKJED</label></div>
+                                <br />
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Form submission successful!</div>
+                                        To activate this form, sign up at
+                                        <br />
+                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    </div>
+                                </div>
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                <!-- Submit Button-->
+                                <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
+                            </form>
+</body>
+</html>
