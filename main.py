@@ -24,28 +24,18 @@ def home():
     form = Leieform()
     if request.method == "GET":
         email = None
-        days = None
-        date = None
-        address = None
         message = None
         return render_template("index.html", form=form)
     else:
         email = None
-        days = None
-        date = None
-        address = None
+
         message = None
         if request.method == "POST":
             email = request.form["email"]
-            days = request.form["days"]
-            date = request.form["date"]
-            address = request.form["address"]
             message = request.form["message"]
             mail = Message()
-            mail.send_self(email, days, date, address, message)
-            mail.send_cus(email, days, date, address, message)
-            return render_template("index.html", form=form, email=email, days=days,
-                                   date=date, address=address, message=message)
+            mail.send_self(email, message)
+            return render_template("index.html", form=form, email=email, message=message)
 
 
 if __name__ == "__main__":
