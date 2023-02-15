@@ -28,7 +28,6 @@ def home():
         return render_template("index.html", form=form)
     else:
         email = None
-
         message = None
         if request.method == "POST":
             email = request.form["email"]
